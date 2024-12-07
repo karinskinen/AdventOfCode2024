@@ -34,4 +34,4 @@ for line in content.splitlines():
 
 print(f"The sum of true equations: {sum(valid_sums)}")
 
-# The answer I've gotten is 1620690235709 and it was correct.
+# The answer I've gotten was 1620690235709 and it was correct.
