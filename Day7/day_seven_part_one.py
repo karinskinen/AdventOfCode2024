@@ -18,7 +18,6 @@ def evaluate_expression(operators, numbers):
 for line in content.splitlines():
     if not line.strip(): 
         continue
-
     try:
         target, numbers = line.split(": ")
         target = int(target)
@@ -28,13 +27,11 @@ for line in content.splitlines():
         continue
 
     operators_combinations = product(["+", "*"], repeat=len(numbers)-1)
-
     for ops in operators_combinations:
         if evaluate_expression(ops, numbers) == target:
             valid_sums.append(target)  
             break  
 
-
-print(f"Summan av giltiga målvärden: {sum(valid_sums)}")
+print(f"The sum of true equations: {sum(valid_sums)}")
 
 # The answer I've gotten is 1620690235709 and it was correct.
