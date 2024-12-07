@@ -23,7 +23,7 @@ for line in content.splitlines():
         target = int(target)
         numbers = list(map(int, numbers.split()))
     except ValueError:
-        print(f"Felaktig rad: {line}")
+        print(f"Wrong line: {line}")
         continue
 
     operators_combinations = product(["+", "*"], repeat=len(numbers)-1)
