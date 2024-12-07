@@ -63,3 +63,5 @@ def simulate_guard(grid, start_position, start_direction):
 
 visited_positions = simulate_guard(grid, start_position, start_direction)
 print(f"No of unique positions visited by the guard: {len(visited_positions)}")
+
+# The answer I've gotten was 4454 and it was correct.
