@@ -29,7 +29,6 @@ def change_stones(stones):
             next_batch_of_stones.append(stone * 2024)
     return next_batch_of_stones
 
-print(change_stones(stones))
 new_stones = stones
 
 i = 0
@@ -42,3 +41,4 @@ count = len(new_stones)
 print(f"The number of stones after blinking 25 times is {count}")
 
 # Answer: 186424
+
